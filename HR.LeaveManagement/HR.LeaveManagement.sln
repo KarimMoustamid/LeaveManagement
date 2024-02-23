@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BE3A6C25-7457-42EE-AA10-515F8B56C8D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2AE4410C-79C2-4053-BE01-9F51B1E0D04A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5EBB901C-266A-4618-9774-C44A0A965BF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CE92D407-3153-487F-8FC1-6CD8D9EDD3D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{FFC513E2-BC70-4905-8FEF-DB49CEE46E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Domain", "HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{5938AB07-D154-4533-BC12-ADF100542A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{E46BE45A-9D06-4344-9889-DBF964741B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EBB901C-266A-4618-9774-C44A0A965BF5} = {BE3A6C25-7457-42EE-AA10-515F8B56C8D8}
+		{CE92D407-3153-487F-8FC1-6CD8D9EDD3D4} = {BE3A6C25-7457-42EE-AA10-515F8B56C8D8}
+		{FFC513E2-BC70-4905-8FEF-DB49CEE46E26} = {BE3A6C25-7457-42EE-AA10-515F8B56C8D8}
+		{5938AB07-D154-4533-BC12-ADF100542A68} = {5EBB901C-266A-4618-9774-C44A0A965BF5}
+		{E46BE45A-9D06-4344-9889-DBF964741B88} = {5EBB901C-266A-4618-9774-C44A0A965BF5}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5938AB07-D154-4533-BC12-ADF100542A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5938AB07-D154-4533-BC12-ADF100542A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5938AB07-D154-4533-BC12-ADF100542A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5938AB07-D154-4533-BC12-ADF100542A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46BE45A-9D06-4344-9889-DBF964741B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46BE45A-9D06-4344-9889-DBF964741B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46BE45A-9D06-4344-9889-DBF964741B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46BE45A-9D06-4344-9889-DBF964741B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
