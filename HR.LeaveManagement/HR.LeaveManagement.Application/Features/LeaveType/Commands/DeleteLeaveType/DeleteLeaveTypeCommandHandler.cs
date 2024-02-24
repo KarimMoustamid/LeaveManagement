@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Exceptions;
 using HR.LeaveManagement.Domain;
 using MediatR;
 
@@ -17,12 +18,14 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.DeleteLeave
         public async Task<Unit> Handle(DeleteLeaveTypeCommand request, CancellationToken cancellationToken)
         {
             // retrieve domain entity object
-            var leaveTypeToDelete = await _leaveTypeRepository.GetByIdAsync(request.Id);
+            var leaveTypeToDelete = await _leaveTypeRepository.GetByIdAsync(request.Id); // DB => Domain 
 
             // verify that record exists
+            if (leaveTypeToDelete == null)
+                throw new NotFoundException(nameof(LeaveType), request.Id);
 
             // remove from database
-            await _leaveTypeRepository.DeleteAsync(leaveTypeToDelete);
+            await _leaveTypeRepository.DeleteAsync(leaveTypeToDelete); // Domain => DB 
 
             // retun record id
             return Unit.Value;
